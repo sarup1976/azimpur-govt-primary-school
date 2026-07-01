@@ -721,3 +721,42 @@ footer{
 }
 
 }
+.menu-toggle{
+    display:none;
+    font-size:30px;
+    color:white;
+    cursor:pointer;
+    text-align:right;
+    padding:10px;
+}
+
+@media (max-width:768px){
+
+.menu-toggle{
+    display:block;
+}
+
+nav{
+    display:none;
+}
+
+nav.active{
+    display:block;
+}
+
+nav ul{
+    display:flex;
+    flex-direction:column;
+    text-align:center;
+    gap:12px;
+    padding:15px 0;
+}
+
+nav ul li{
+    list-style:none;
+}
+
+nav ul li a{
+    font-size:20px;
+}
+}
