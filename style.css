@@ -721,23 +721,30 @@ footer{
 }
 
 }
+
 .menu-toggle{
     display:none;
     font-size:30px;
-    color:white;
+    color:#fff;
     cursor:pointer;
-    text-align:right;
-    padding:10px;
 }
 
 @media (max-width:768px){
 
+header{
+    flex-direction:column;
+    align-items:flex-start;
+}
+
 .menu-toggle{
     display:block;
+    align-self:flex-end;
+    margin:10px;
 }
 
 nav{
     display:none;
+    width:100%;
 }
 
 nav.active{
@@ -747,9 +754,10 @@ nav.active{
 nav ul{
     display:flex;
     flex-direction:column;
+    width:100%;
     text-align:center;
-    gap:12px;
-    padding:15px 0;
+    padding:10px 0;
+    gap:10px;
 }
 
 nav ul li{
@@ -757,6 +765,7 @@ nav ul li{
 }
 
 nav ul li a{
-    font-size:20px;
+    display:block;
+    padding:10px;
 }
 }
