@@ -643,3 +643,81 @@ nav ul li{
     padding:20px;
   }
 }
+/* ================= MOBILE RESPONSIVE ================= */
+
+@media (max-width:768px){
+
+header{
+    padding:15px;
+}
+
+.logo{
+    flex-direction:column;
+    text-align:center;
+}
+
+.logo img{
+    width:90px;
+    height:90px;
+    margin-bottom:10px;
+}
+
+.logo h1{
+    font-size:32px;
+}
+
+.logo p{
+    font-size:18px;
+}
+
+nav ul{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:15px;
+    padding:0;
+}
+
+nav ul li{
+    list-style:none;
+}
+
+nav ul li a{
+    font-size:20px;
+}
+
+.hero{
+    padding:60px 20px;
+    text-align:center;
+}
+
+.hero h2{
+    font-size:28px;
+}
+
+.hero p{
+    font-size:18px;
+}
+
+.container{
+    width:95%;
+}
+
+.teacher-card,
+.notice-card,
+.contact-card{
+    width:100%;
+    margin-bottom:20px;
+}
+
+img{
+    max-width:100%;
+    height:auto;
+}
+
+footer{
+    padding:20px;
+    text-align:center;
+}
+
+}
